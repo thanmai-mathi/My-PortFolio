@@ -1,51 +1,193 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Portfolio</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#e9ab2f;
+    }
+
+    /* NAVBAR */
+    nav{
+      width:100%;
+      background:white;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:25px 70px;
+    }
+
+    nav h1{
+      font-size:35px;
+      font-weight:bold;
+    }
+
+    nav ul{
+      display:flex;
+      gap:40px;
+      list-style:none;
+    }
+
+    nav ul li a{
+      text-decoration:none;
+      color:black;
+      font-size:20px;
+      font-weight:500;
+    }
+
+    /* HERO SECTION */
+    .hero{
+      width:85%;
+      margin:70px auto;
+      background:#e6e6e6;
+      border-radius:35px;
+      padding:60px;
+    }
+
+    .hero-container{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:60px;
+    }
+
+    /* LEFT IMAGE */
+    .hero-image{
+      flex:1;
+      display:flex;
+      justify-content:center;
+    }
+
+    .hero-image img{
+      width:100%;
+      max-width:450px;
+      border-radius:20px;
+    }
+
+    /* RIGHT CONTENT */
+    .hero-content{
+      flex:1;
+    }
+
+    .tag{
+      color:#d99900;
+      font-size:22px;
+      font-weight:bold;
+      margin-bottom:25px;
+    }
+
+    .hero-content h2{
+      font-size:70px;
+      line-height:1.1;
+      margin-bottom:25px;
+      color:black;
+    }
+
+    .hero-content p{
+      font-size:24px;
+      color:#666;
+      margin-bottom:35px;
+    }
+
+    .hero-content button{
+      padding:18px 35px;
+      border:none;
+      background:#e9ab2f;
+      font-size:22px;
+      border-radius:10px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .hero-content button:hover{
+      background:#d99900;
+    }
+
+    /* MOBILE RESPONSIVE */
+    @media(max-width:900px){
+
+      .hero-container{
+        flex-direction:column;
+        text-align:center;
+      }
+
+      .hero-content h2{
+        font-size:45px;
+      }
+
+      nav{
+        flex-direction:column;
+        gap:20px;
+      }
+
+      nav ul{
+        gap:20px;
+      }
+    }
+
+  </style>
 </head>
 
 <body>
 
-<nav class="navbar">
+  <!-- NAVBAR -->
+  <nav>
+    <h1>My Portfolio 🦊</h1>
 
-<h3>My Portfolio 🦊</h3>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Resume</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
-<ul class="nav-links">
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="resume.html">Resume</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
+  <!-- HERO SECTION -->
+  <section class="hero">
 
-</nav>
+    <div class="hero-container">
 
-<section class="hero">
+      <!-- LEFT SIDE IMAGE -->
+      <div class="hero-image">
+        <img src="fox.png" alt="fox image">
+      </div>
 
-<div class="hero-text">
+      <!-- RIGHT SIDE CONTENT -->
+      <div class="hero-content">
 
-<p class="role">STUDENT 👩🏻‍💻</p>
+        <div class="tag">
+          STUDENT 👩🏻‍💻
+        </div>
 
-<h1>Hello, my name is Thanmai Mathi</h1>
+        <h2>
+          Hello, my name is <br>
+          Thanmai Mathi
+        </h2>
 
-<p class="desc">
-welcome to this small portfolio created by me with ❤️
-</p>
+        <p>
+          Welcome to this small portfolio created by me with ❤️
+        </p>
 
+        <button>
+          Portfolio Poster
+        </button>
 
-<div class="buttons">
+      </div>
 
-<a href="poster.html" class="btn primary">Portfolio Poster</a>
+    </div>
 
-
-
-</div>
-
-</div>
-
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK0ceP2j3ur-IJ0qjuQH0xqwVbP_OuOsXPBg&s" alt="My Image">
-</section>
+  </section>
 
 </body>
 </html>
