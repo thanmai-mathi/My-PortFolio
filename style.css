@@ -33,24 +33,26 @@ font-weight:500;
 
 /* HERO SECTION */
 
-.hero{
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:#e6e6e6;
-margin:60px auto;
-width:85%;
-padding:60px;
-border-radius:20px;
+.hero-container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
 }
 
-.hero-text{
-max-width:500px;
+/* IMAGE LEFT */
+.hero-image{
+    flex:1;
 }
 
-.hero-text h1{
-font-size:48px;
-margin:20px 0;
+.hero-image img{
+    width:100%;
+    max-width:450px;
+}
+
+/* CONTENT RIGHT */
+.hero-content{
+    flex:1;
 }
 
 .role{
